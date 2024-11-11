@@ -432,7 +432,7 @@ document.write(`
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingRegressor</span><span class="p">,</span> <span class="n">RandomForestRegressor</span><span class="p">,</span> <span class="n">VotingRegressor</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">r2_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">r2_score</span><span class="p">,</span><span class="n">mean_absolute_percentage_error</span>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span> <span class="c1">#new</span>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span> <span class="c1"># Import DecisionTreeRegressor</span>
 <span class="kn">from</span> <span class="nn">statsmodels.tsa.arima.model</span> <span class="kn">import</span> <span class="n">ARIMA</span>
@@ -471,7 +471,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7c431d12-7439-4017-a410-65a391f0df69" class="colab-df-container">
+  <div id="df-c4a9211a-3023-4fcf-8be7-3c120e4a255b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -557,7 +557,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-7c431d12-7439-4017-a410-65a391f0df69')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c4a9211a-3023-4fcf-8be7-3c120e4a255b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -609,12 +609,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-7c431d12-7439-4017-a410-65a391f0df69 button.colab-df-convert');
+        document.querySelector('#df-c4a9211a-3023-4fcf-8be7-3c120e4a255b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-7c431d12-7439-4017-a410-65a391f0df69');
+        const element = document.querySelector('#df-c4a9211a-3023-4fcf-8be7-3c120e4a255b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -634,8 +634,8 @@ document.write(`
   </div>
 
 
-<div id="df-1303996b-5330-4c8f-be0f-b056119c1f9d">
-  <button class="colab-df-quickchart" onclick="quickchart('df-1303996b-5330-4c8f-be0f-b056119c1f9d')"
+<div id="df-2d3bf44f-7403-41ee-8c2b-87a37cc5e1cd">
+  <button class="colab-df-quickchart" onclick="quickchart('df-2d3bf44f-7403-41ee-8c2b-87a37cc5e1cd')"
             title="Suggest charts"
             style="display:none;">
 
@@ -754,14 +754,14 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-1303996b-5330-4c8f-be0f-b056119c1f9d button');
+        document.querySelector('#df-2d3bf44f-7403-41ee-8c2b-87a37cc5e1cd button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
 
-  <div id="id_fb7d05dc-d166-447a-b03a-7f36b30c2709">
+  <div id="id_14c5aeb2-460c-4752-99aa-e1257508f48a">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -805,7 +805,7 @@ document.write(`
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_fb7d05dc-d166-447a-b03a-7f36b30c2709 button.colab-df-generate');
+        document.querySelector('#id_14c5aeb2-460c-4752-99aa-e1257508f48a button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -891,7 +891,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1cb6c6e1-3a20-42fa-9338-67e6fd794c64" class="colab-df-container">
+  <div id="df-50a3d630-6e25-4923-b019-e7cdd4702441" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -969,7 +969,7 @@ dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1cb6c6e1-3a20-42fa-9338-67e6fd794c64')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-50a3d630-6e25-4923-b019-e7cdd4702441')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1021,12 +1021,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1cb6c6e1-3a20-42fa-9338-67e6fd794c64 button.colab-df-convert');
+        document.querySelector('#df-50a3d630-6e25-4923-b019-e7cdd4702441 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1cb6c6e1-3a20-42fa-9338-67e6fd794c64');
+        const element = document.querySelector('#df-50a3d630-6e25-4923-b019-e7cdd4702441');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1046,8 +1046,8 @@ dtype: int64
   </div>
 
 
-<div id="df-0078e095-795e-49c2-a2e4-5b9ad7459b04">
-  <button class="colab-df-quickchart" onclick="quickchart('df-0078e095-795e-49c2-a2e4-5b9ad7459b04')"
+<div id="df-852c65ef-8ef5-4062-9536-79eba1360883">
+  <button class="colab-df-quickchart" onclick="quickchart('df-852c65ef-8ef5-4062-9536-79eba1360883')"
             title="Suggest charts"
             style="display:none;">
 
@@ -1166,14 +1166,14 @@ dtype: int64
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-0078e095-795e-49c2-a2e4-5b9ad7459b04 button');
+        document.querySelector('#df-852c65ef-8ef5-4062-9536-79eba1360883 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
 
-  <div id="id_459b3b82-6c0b-4c4e-b132-683ca5f368ae">
+  <div id="id_46095cfe-2d84-4d7b-a2e1-19786628cc29">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -1217,7 +1217,7 @@ dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_459b3b82-6c0b-4c4e-b132-683ca5f368ae button.colab-df-generate');
+        document.querySelector('#id_46095cfe-2d84-4d7b-a2e1-19786628cc29 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -1244,7 +1244,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8c5e8cff-5dab-4dda-aa72-c6f82d296c95" class="colab-df-container">
+  <div id="df-e7677366-a747-45bf-8b44-dd342083c505" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1335,7 +1335,7 @@ dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8c5e8cff-5dab-4dda-aa72-c6f82d296c95')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e7677366-a747-45bf-8b44-dd342083c505')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1387,12 +1387,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8c5e8cff-5dab-4dda-aa72-c6f82d296c95 button.colab-df-convert');
+        document.querySelector('#df-e7677366-a747-45bf-8b44-dd342083c505 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8c5e8cff-5dab-4dda-aa72-c6f82d296c95');
+        const element = document.querySelector('#df-e7677366-a747-45bf-8b44-dd342083c505');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1412,8 +1412,8 @@ dtype: int64
   </div>
 
 
-<div id="df-01b249c6-5051-4b4c-9b2a-d6809693ae8f">
-  <button class="colab-df-quickchart" onclick="quickchart('df-01b249c6-5051-4b4c-9b2a-d6809693ae8f')"
+<div id="df-7d0b9cc2-8498-46b6-9e08-d4b90177acd4">
+  <button class="colab-df-quickchart" onclick="quickchart('df-7d0b9cc2-8498-46b6-9e08-d4b90177acd4')"
             title="Suggest charts"
             style="display:none;">
 
@@ -1532,14 +1532,14 @@ dtype: int64
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-01b249c6-5051-4b4c-9b2a-d6809693ae8f button');
+        document.querySelector('#df-7d0b9cc2-8498-46b6-9e08-d4b90177acd4 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
 
-  <div id="id_3f52e260-d4d9-4f66-8a59-4356c0eada30">
+  <div id="id_29c2eaa9-2ecb-4844-a973-3d21fb7edbc4">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -1583,7 +1583,7 @@ dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_3f52e260-d4d9-4f66-8a59-4356c0eada30 button.colab-df-generate');
+        document.querySelector('#id_29c2eaa9-2ecb-4844-a973-3d21fb7edbc4 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -1643,7 +1643,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-21badd94-99fd-4f25-9dee-853ce78432b8" class="colab-df-container">
+  <div id="df-f3ceb63f-ff37-4dfa-a176-e1f8f65dd1ff" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1861,7 +1861,7 @@ dtype: int64
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-21badd94-99fd-4f25-9dee-853ce78432b8')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f3ceb63f-ff37-4dfa-a176-e1f8f65dd1ff')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1913,12 +1913,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-21badd94-99fd-4f25-9dee-853ce78432b8 button.colab-df-convert');
+        document.querySelector('#df-f3ceb63f-ff37-4dfa-a176-e1f8f65dd1ff button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-21badd94-99fd-4f25-9dee-853ce78432b8');
+        const element = document.querySelector('#df-f3ceb63f-ff37-4dfa-a176-e1f8f65dd1ff');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1938,8 +1938,8 @@ dtype: int64
   </div>
 
 
-<div id="df-6060c407-90a3-4b1b-9d12-6589f0ebfffa">
-  <button class="colab-df-quickchart" onclick="quickchart('df-6060c407-90a3-4b1b-9d12-6589f0ebfffa')"
+<div id="df-02eaeec9-190c-4f92-8d27-d53588cc158b">
+  <button class="colab-df-quickchart" onclick="quickchart('df-02eaeec9-190c-4f92-8d27-d53588cc158b')"
             title="Suggest charts"
             style="display:none;">
 
@@ -2058,14 +2058,14 @@ dtype: int64
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-6060c407-90a3-4b1b-9d12-6589f0ebfffa button');
+        document.querySelector('#df-02eaeec9-190c-4f92-8d27-d53588cc158b button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
 
-  <div id="id_ad6b1d86-295f-409d-a16c-5f616ba2e333">
+  <div id="id_44fb0176-8693-46d6-8068-5786fbdff70d">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -2109,7 +2109,7 @@ dtype: int64
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_ad6b1d86-295f-409d-a16c-5f616ba2e333 button.colab-df-generate');
+        document.querySelector('#id_44fb0176-8693-46d6-8068-5786fbdff70d button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -2165,6 +2165,7 @@ dtype: int64
 <span class="n">mse_voting</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test_w</span><span class="p">,</span> <span class="n">y_pred_voting</span><span class="p">)</span>
 <span class="n">mae_voting</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test_w</span><span class="p">,</span> <span class="n">y_pred_voting</span><span class="p">)</span>
 <span class="n">r2_voting</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test_w</span><span class="p">,</span> <span class="n">y_pred_voting</span><span class="p">)</span>
+<span class="n">mape_voting</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test_w</span><span class="p">,</span> <span class="n">y_pred_voting</span><span class="p">)</span>
 
 <span class="c1"># Predicting the next 12 months using the ensemble sliding window</span>
 <span class="n">last_window</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IPG2211A2N&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="o">-</span><span class="n">window_size</span><span class="p">:]</span>
@@ -2208,6 +2209,88 @@ dtype: int64
 <img alt="_images/cd29aa8281a5770d27560efe3520416918cc465e72c068b0b8dc9d041135e6ab.png" src="_images/cd29aa8281a5770d27560efe3520416918cc465e72c068b0b8dc9d041135e6ab.png" />
 </div>
 </div>
+<p>Menampilkan data dalam bentuk angka</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import pandas as pd</span>
+
+<span class="c1"># Asumsikan hasil prediksi disimpan dalam list &#39;predictions_voting&#39;</span>
+<span class="c1"># Buat range waktu (misalnya untuk 12 bulan ke depan) sebagai index</span>
+<span class="n">date_range</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;2018-01-01&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;MS&#39;</span><span class="p">)</span>
+
+<span class="c1"># Buat DataFrame dari prediksi</span>
+<span class="n">df_predictions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Predicted Values&#39;</span><span class="p">:</span> <span class="n">predictions_voting</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">date_range</span><span class="p">)</span>
+
+<span class="c1"># Tampilkan DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_predictions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            Predicted Values
+2018-01-01        106.942780
+2018-02-01         99.686723
+2018-03-01         90.692916
+2018-04-01         92.245455
+2018-05-01        104.376894
+2018-06-01        112.007060
+2018-07-01        109.284999
+2018-08-01         98.088104
+2018-09-01         93.360484
+2018-10-01        100.087129
+2018-11-01        113.846373
+2018-12-01        118.248623
+</pre></div>
+</div>
+</div>
+</div>
+<p>Implementasi jika input data baru</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Misalkan data baru berupa array atau list, contoh:</span>
+<span class="n">new_data</span> <span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">91.4867</span><span class="p">,</span>	<span class="mf">92.8900</span><span class="p">,</span>	<span class="mf">112.7694</span><span class="p">,</span>	<span class="mf">114.8505</span><span class="p">,</span>	<span class="mf">99.4901</span><span class="p">,</span>	<span class="mf">101.0396</span><span class="p">,</span>	<span class="mf">88.3530</span><span class="p">,</span>	<span class="mf">92.0805</span><span class="p">,</span>	<span class="mf">102.1532</span><span class="p">,</span>	<span class="mf">112.1538</span><span class="p">,</span>	<span class="mf">108.9312</span><span class="p">,</span>	<span class="mf">98.6154</span><span class="p">]])</span>
+
+<span class="c1"># Pastikan untuk melakukan scaling data baru menggunakan scaler yang sudah dipakai</span>
+<span class="n">new_data_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+
+<span class="c1"># Prediksi menggunakan model yang sudah dilatih</span>
+<span class="n">new_predictions</span> <span class="o">=</span> <span class="n">bagging_model_voting</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">new_data_scaled</span><span class="p">)</span>
+
+<span class="c1"># Buat range waktu untuk data baru, misalnya jika data baru adalah untuk 6 bulan ke depan</span>
+<span class="n">new_date_range</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;2019-01-01&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">new_predictions</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;MS&#39;</span><span class="p">)</span>
+
+<span class="c1"># Buat DataFrame dari prediksi baru</span>
+<span class="n">df_new_predictions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Predicted Values&#39;</span><span class="p">:</span> <span class="n">new_predictions</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">new_date_range</span><span class="p">)</span>
+
+<span class="c1"># Gabungkan prediksi baru dengan prediksi lama (opsional, jika ingin menyatukan semua prediksi)</span>
+<span class="n">df_all_predictions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_predictions</span><span class="p">,</span> <span class="n">df_new_predictions</span><span class="p">])</span>
+
+<span class="c1"># Tampilkan DataFrame hasil inputasi baru</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_all_predictions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            Predicted Values
+2018-01-01        106.942780
+2018-02-01         99.686723
+2018-03-01         90.692916
+2018-04-01         92.245455
+2018-05-01        104.376894
+2018-06-01        112.007060
+2018-07-01        109.284999
+2018-08-01         98.088104
+2018-09-01         93.360484
+2018-10-01        100.087129
+2018-11-01        113.846373
+2018-12-01        118.248623
+2019-01-01         91.946274
+</pre></div>
+</div>
+</div>
+</div>
 <p>Code dibawah digunakan untuk menampilkan nilai RMSE, MSE, MAE, dan R^2(R Squared)</p>
 <ul class="simple">
 <li><p>RMSE adalah akar kuadrat dari Mean Squared Error (MSE). Ini mengukur rata-rata kesalahan prediksi dari model dalam satuan yang sama dengan data aslinya (dalam hal ini, satuan produksi es krim).</p></li>
@@ -2222,6 +2305,7 @@ dtype: int64
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MSE:&quot;</span><span class="p">,</span> <span class="n">mse_voting</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAE:&quot;</span><span class="p">,</span> <span class="n">mae_voting</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;R^2 Score:&quot;</span><span class="p">,</span> <span class="n">r2_voting</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAPE:&quot;</span><span class="p">,</span> <span class="n">mape_voting</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2230,6 +2314,7 @@ dtype: int64
 MSE: 14.23616912218426
 MAE: 2.6639285287797287
 R^2 Score: 0.8445098170524924
+MAPE: 0.025225646555065775
 </pre></div>
 </div>
 </div>
@@ -2260,6 +2345,7 @@ R^2 Score: 0.8445098170524924
 <span class="n">mse_arima</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test_arima</span><span class="p">,</span> <span class="n">forecast_arima</span><span class="p">)</span>
 <span class="n">mae_arima</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test_arima</span><span class="p">,</span> <span class="n">forecast_arima</span><span class="p">)</span>
 <span class="n">r2_arima</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test_arima</span><span class="p">,</span> <span class="n">forecast_arima</span><span class="p">)</span>
+<span class="n">mape_arima</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test_arima</span><span class="p">,</span> <span class="n">forecast_arima</span><span class="p">)</span>
 
 <span class="c1"># Membuat tanggal untuk prediksi (lanjutan dari data aktual terakhir)</span>
 <span class="n">future_dates_arima</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pd</span><span class="o">.</span><span class="n">DateOffset</span><span class="p">(</span><span class="n">months</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">periods</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;M&#39;</span><span class="p">)</span>
@@ -2273,7 +2359,7 @@ R^2 Score: 0.8445098170524924
   self._init_dates(dates, freq)
 /usr/local/lib/python3.10/dist-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: No frequency information was provided, so inferred frequency MS will be used.
   self._init_dates(dates, freq)
-&lt;ipython-input-25-f5c3a804079d&gt;:16: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+&lt;ipython-input-19-4f07b80bc98b&gt;:17: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   future_dates_arima = pd.date_range(start=df.index[-1] + pd.DateOffset(months=1), periods=12, freq=&#39;M&#39;)
 </pre></div>
 </div>
@@ -2318,6 +2404,7 @@ R^2 Score: 0.8445098170524924
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MSE:&quot;</span><span class="p">,</span> <span class="n">mse_arima</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAE:&quot;</span><span class="p">,</span> <span class="n">mae_arima</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;R^2 Score:&quot;</span><span class="p">,</span> <span class="n">r2_arima</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAPE:&quot;</span><span class="p">,</span> <span class="n">mape_arima</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2327,6 +2414,7 @@ RMSE: 9.67338389598849
 MSE: 93.57435599916947
 MAE: 7.829889863026248
 R^2 Score: 0.2220137916374474
+MAPE: 0.07615158880695883
 </pre></div>
 </div>
 </div>
